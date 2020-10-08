@@ -9,9 +9,9 @@ function App(props)
     return(
         <BrowserRouter>
             <div>
-                <Link to='/'></Link>
+                <Link to='/Movie-Web-Challenge'></Link>
                 <Switch>
-                    <Route path='/' component={MovieList} exact={true}/>
+                    <Route path='/Movie-Web-Challenge' component={MovieList} exact={true}/>
                     <Route path='/movie/:imdbID' component={MovieShow}/>
                 </Switch>
             </div>
