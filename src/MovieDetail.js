@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import {Card} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+import {Card, Container, Row,Col} from 'react-bootstrap'
 
 class MovieShow extends React.Component{
     constructor(){
@@ -20,32 +19,30 @@ class MovieShow extends React.Component{
         })
     }
     render(){
-        console.log('details',this.state.details.title)
         return(
-            <div>
-                <Card style={{ width: '22 rem' }}>
-                    <Card.Img variant="top" src={this.state.details.Poster} width='220 rem'/> 
-                    <Card.Body>
-                        <Card.Title>
-                            <b>Movie Name:--- {this.state.details.Title}</b>
-                        </Card.Title>&nbsp;
-                        <Card.Subtitle className="mb-2 text-muted">
-                            <b>
-                                Released on- {this.state.details.Released}<br/>
-                                RunTime:- {this.state.details.Runtime}<br/>
-                                {/* <b>Year of release:- {this.state.details.Year} <br/> */}
-                                country:--{this.state.details.Country}<br/>
-                                Genre - {this.state.details.Genre}<br/>
-                                Language - {this.state.details.Language}
-                            </b>
-                        </Card.Subtitle>
-                        <Card.Text>
-                            <b>Actors:----{this.state.details.Actors}</b><br/>
-                            <b>{this.state.details.Plot}</b>
-                        </Card.Text>
-                        <Card.Link href="/">back</Card.Link>
-                    </Card.Body>
-                </Card>
+            <div className='fluid-container' style={{height:"100%", width: "100%",backgroundColor:" red",backgroundImage:"linear-gradient(#F4F8F9,#B7F4C9,#E4C4F9)"}}>
+                <h1 className='pt-5 pb-2' style={{textAlign:"center"}}>Movie Details </h1>
+                <Container>
+                        <Card.Body className='border rounded-lg pl-5 mt-5' style={{borderColor:'black'}}>
+                            <Card.Header className='border-0 ml-3 mb-3'>
+                                <h3><b>Movie Name - </b> {this.state.details.Title}</h3>
+                            </Card.Header>
+                                <Row>
+                                    <Col md={6}><img src={this.state.details.Poster} alt='pic of candidate' className='img-rersponsive ml-3' style={{width:'auto',height:'auto'}}></img></Col>
+                                    <Col md={6}>
+                                        <p className='ml-3'>
+                                            <b>Released on - </b> {this.state.details.Released} ({this.state.details.Country})<br/>
+                                            <b>Genre - </b> {this.state.details.Genre}<br/>
+                                            <b>Language - </b> {this.state.details.Language}<br/>
+                                            <b>Actor - </b> {this.state.details.Actors}<br/><br/>
+                                            <b>Description - </b>{this.state.details.Plot}<br/><br/>
+                                            <b>Writer - </b>{this.state.details.Writer}<br/>
+                                        </p>
+                                    </Col>
+                                </Row><br/>
+                            <Card.Link href="/">back</Card.Link>
+                        </Card.Body>
+                </Container>
             </div>
         )
     }

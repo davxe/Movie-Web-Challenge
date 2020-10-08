@@ -1,0 +1,23 @@
+body {
+    display: auto;
+
+}
+h1,h2 {
+    font-display: bold;
+}
+.btn:hover{
+    border-radius: 15px;
+    background-color: burlywood;
+    border: 2px solid brown;
+}
+.form-control:hover{
+    border-radius: 15px;
+    background-color: rgb(135, 166, 222);
+    border: 2px solid rgb(42, 165, 144);
+    text-decoration: block;
+
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border:2px solid black;
+}

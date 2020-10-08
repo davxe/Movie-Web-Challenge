@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import { Container ,Card, Form} from 'react-bootstrap'
 
 class MovieList extends React.Component{
     constructor(){
@@ -8,7 +9,6 @@ class MovieList extends React.Component{
         this.state={
             movie:[],
             data:'',
-            // data:[]
         }
     }
     handleSearch=(e)=>{
@@ -17,7 +17,6 @@ class MovieList extends React.Component{
         axios.get(`http://www.omdbapi.com/?apikey=2341037e&s=${data}&type=movie`)
         .then(response=>{
             const search=response.data.Search
-            console.log('movie list',search)
             this.setState({movie:search})
         })
         .catch(err=>{
@@ -28,24 +27,27 @@ class MovieList extends React.Component{
         })
     }
     render(){
-        console.log('state',this.state.movie)
         return(
-            <div>
-                <input type='search' name='data' onChange={this.handleSearch} placeholder='search title'></input>
-                
-                {
-                    this.state.movie!=undefined?(
-                        <div>
-                            <ul>
-                                {
-                                    this.state.movie.map((ele,i)=>{
-                                        return (<li key={i}><Link to={`/movie/${ele.imdbID}`}>{ele.Title}</Link></li>)
-                                    })
-                                }
-                            </ul>
-                        </div>):('')
-                }
-                
+            <div className='fluid-container'style={{height:'100%'}}>
+                <Container>
+                    <h1 className='pt-5 pb-2' style={{textAlign:"center",fontSize:'34px'}}>Search Your Movie Name </h1>
+                    <Form.Control size='lg'
+                        type='search' 
+                        name='data'   
+                        onChange={this.handleSearch} 
+                        placeholder='search movie by title'
+                    />
+                    {
+                        this.state.movie!=undefined?(
+                            <div>
+                                    {
+                                        this.state.movie.map((ele,i)=>{
+                                            return (<Card.Title key={i}><Link to={`/movie/${ele.imdbID}`}>{ele.Title}</Link></Card.Title>)
+                                        })
+                                    }
+                            </div>):('')
+                    }
+                </Container>
             </div>
         )
     }
