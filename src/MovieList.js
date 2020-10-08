@@ -38,7 +38,7 @@ class MovieList extends React.Component{
                         placeholder='search movie by title'
                     />
                     {
-                        this.state.movie!=undefined?(
+                        this.state.movie!==undefined?(
                             <div>
                                     {
                                         this.state.movie.map((ele,i)=>{
