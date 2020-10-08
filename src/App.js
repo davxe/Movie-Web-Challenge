@@ -10,10 +10,8 @@ function App(props)
         <BrowserRouter>
             <div>
                 <Link to='/'></Link>
-                <Switch>
                     <Route path='/' component={MovieList} exact={true}/>
                     <Route path='/movie/:imdbID' component={MovieShow}/>
-                </Switch>
             </div>
         </BrowserRouter>
     )
