@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Movie-Web-Challenge/static/css/main.612ae3ca.chunk.css",
+    "main.js": "/Movie-Web-Challenge/static/js/main.e6406b2b.chunk.js",
+    "main.js.map": "/Movie-Web-Challenge/static/js/main.e6406b2b.chunk.js.map",
+    "runtime-main.js": "/Movie-Web-Challenge/static/js/runtime-main.eb353966.js",
+    "runtime-main.js.map": "/Movie-Web-Challenge/static/js/runtime-main.eb353966.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/Movie-Web-Challenge/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.cb146f9d.chunk.js": "/Movie-Web-Challenge/static/js/2.cb146f9d.chunk.js",
+    "static/js/2.cb146f9d.chunk.js.map": "/Movie-Web-Challenge/static/js/2.cb146f9d.chunk.js.map",
+    "index.html": "/Movie-Web-Challenge/index.html",
+    "precache-manifest.5d626cb7c9e542cf428a02dd569363c6.js": "/Movie-Web-Challenge/precache-manifest.5d626cb7c9e542cf428a02dd569363c6.js",
+    "service-worker.js": "/Movie-Web-Challenge/service-worker.js",
+    "static/css/2.f3cffc9e.chunk.css.map": "/Movie-Web-Challenge/static/css/2.f3cffc9e.chunk.css.map",
+    "static/css/main.612ae3ca.chunk.css.map": "/Movie-Web-Challenge/static/css/main.612ae3ca.chunk.css.map",
+    "static/js/2.cb146f9d.chunk.js.LICENSE.txt": "/Movie-Web-Challenge/static/js/2.cb146f9d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb353966.js",
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.cb146f9d.chunk.js",
+    "static/css/main.612ae3ca.chunk.css",
+    "static/js/main.e6406b2b.chunk.js"
+  ]
+}
