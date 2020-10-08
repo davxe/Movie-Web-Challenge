@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter,Route,Link} from 'react-router-dom'
+import {BrowserRouter,Route} from 'react-router-dom'
 import MovieList from './MovieList'
 import MovieShow from './MovieDetail'
 import 'bootstrap/dist/css/bootstrap.css';
