@@ -42,7 +42,14 @@ class MovieList extends React.Component{
                             <div>
                                     {
                                         this.state.movie.map((ele,i)=>{
-                                            return (<Card.Title key={i}><Link to={`/movie/${ele.imdbID}`}>{ele.Title}</Link></Card.Title>)
+                                            return (
+                                                <div>
+                                                    <Card>
+                                                        <img src={ele.Poster} alt='movie' style={{height:'78px',width:'78px'}} className='img-rersponsive ml-3'></img>
+                                                         <Card.Title key={i}><Link to={`/movie/${ele.imdbID}`}>{ele.Title}</Link>
+                                                        </Card.Title></Card>
+                                                </div>
+                                            )
                                         })
                                     }
                             </div>):('')
