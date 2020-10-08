@@ -9,7 +9,7 @@ function App(props)
     return(
         <BrowserRouter>
             <div>
-                <Link to='/'>List</Link>
+                {/* <Link to='/'></Link> */}
                     <Route path='/' component={MovieList} exact={true}/>
                     <Route path='/movie/:imdbID' component={MovieShow}/>
             </div>
