@@ -2,7 +2,7 @@
   "name": "movie-web-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://davxe.github.io/Movie-Web-Challenge",
+  "homepage": "http://davxe.github.io/Movie-Web-Challenge/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
