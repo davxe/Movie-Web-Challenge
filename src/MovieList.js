@@ -39,7 +39,7 @@ class MovieList extends React.Component{
                     />
                     {
                         this.state.movie!==undefined?(
-                            <div>
+                            <div className='scrolling'>
                                     {
                                         this.state.movie.map((ele,i)=>{
                                             return (
